@@ -1,0 +1,24 @@
+{
+  "name": "lambda-validator",
+  "version": "1.0.0",
+  "description": "Parses and validates Lambda POST bodies with class-validator",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Isaac Nassimi",
+  "keywords": [
+    "lambda",
+    "typescript",
+    "serverless",
+    "validation",
+    "body"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "class-validator": "^0.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.10"
+  }
+}
