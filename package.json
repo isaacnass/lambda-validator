@@ -1,6 +1,6 @@
 {
   "name": "lambda-validator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Parses and validates Lambda POST bodies with class-validator",
   "main": "dist/index.js",
   "scripts": {
