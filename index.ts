@@ -8,7 +8,7 @@ export default async function ValidateBody<T extends InstanceType<any>> (targetT
 	const errors = await validator.validate(input, {
 		whitelist: true,
 	})
-	if (errors) {
+	if (errors && errors.length > 0) {
 		return Promise.reject(errors)
 	}
 

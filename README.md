@@ -23,7 +23,8 @@ export const hello: APIGatewayProxyHandler = async (event, _context) => {
 		statusCode: 200,
 		body: JSON.stringify(body),
 	}
-}```
+}
+```
 
 ## API
 
