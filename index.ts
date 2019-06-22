@@ -6,7 +6,7 @@ const validator = new Validator()
 
 export default async function ValidateBody<T>(targetType: Constructor<T>, bodyString?: string | null, opts?: ValidatorOptions): Promise<T> {
 	const body = JSON.parse(bodyString || '')
-	const input = Object.assign(new targetType(), body)
+	const input: T = Object.assign(new targetType(), body)
 	const errors = await validator.validate(input, {
 		whitelist: true,
 	})
